@@ -1,0 +1,55 @@
+\clearpage \section{Function Subtraction}
+Function subtraction is identical to addition, except you're subtracting functions instead of adding them.
+\begin{definition}
+    Given two functions $f$ and $g$, their difference $(f - g)(x)$ can be defined as 
+    \[
+        (f - g)(x) = f(x) - g(x) \text{.}
+    \]
+    If the function $f$ has a domain of $D_1$ and the function $g$ has a domain of $D_2$, the domain of $(f - g)(x)$ is the set of all $x$ values such that $x \in D_1$ and $x \in D_2$ or, more simply, $D_1 \cap D_2$ (intersection of $D_1$ and $D_2$).
+\end{definition}
+Do you think you can extend the ideas discussed in Function Addition to\\Function Subtraction? Give this problem a shot.
+\begin{problem}
+    Given two functions $f$ and $g$ defined as $f(x) = \sqrt{x + 1}$ and $g(x) = 2x$, find $(f - g)(x)$ and list its domain.
+\end{problem}
+\begin{solution}
+    We're given two functions $f$ and $g$ and asked to subtract $g$ from $f$. If we apply what we learned when adding functions, we know that the solution to this is
+    \[
+        (f - g)(x) = \sqrt{x + 1} - 2x \text{.}
+    \]
+    To find the domain of this function, let's first find the domain of $f$ and $g$. The function $f$ is a radical function. That means the radicand (the term inside the square root symbol) must be positive or $0$. To find what values of $x$ satisfy this restriction, we can set the radicant equal to $0$ and solve for $x$.
+    \begin{align*}
+        x + 1 &= 0 \\
+        x &= -1
+    \end{align*}
+    Therefore, the domain of $f$ is $x \in [-1, \infty)$.
+    
+    \clearpage The function $g$, however, has no restriction at all. It's just a polynomial term. That means its domain is $x \in \mathbb{R}$. Because the domain of $f$ is \textit{in} the domain of $g$, the domain of $(f - g)(x)$ is just the domain of $f$. Thus, the domain of $(f - g)(x)$ is $x \in [-1, \infty)$.
+\end{solution}
+Nice. Let's do a slightly more difficult one.
+\begin{problem}
+    Given that $f(x) = \sqrt{3x^2 + 1}$ and $g(x) = \frac{3}{2x - 5}$, find $(g - f)(x)$ and list its domain.
+\end{problem}
+\begin{solution}
+    There are a few things to note with this problem. First, pay attention to the fact that we're subtracting $f$ from $g$ this time ($g - f$) and not $g$ from $f$ ($f - g$). Whereas addition is communitative (i.e. the order doesn't matter), subtraction is not. So it's really important that we label this correctly.
+    \[
+        (g - f)(x) = g(x) - f(x) \Longrightarrow (g - f)(x) = \frac{3}{2x - 5} - \sqrt{3x^2 + 1}
+    \]
+    Now that we've made the function, we can determine its domain. I'll work with $g$ first, but it doesn't matter which one you start with.
+
+    $g$ is a rational function (fraction), meaning its denominator cannot equal $0$. We can find what value of $x$ is invalid by setting the denominator to $0$ and solving for $x$.
+    \begin{align*}
+        2x - 5 &= 0 \\
+        2x &= 5 \\
+        x &= \frac{5}{2}
+    \end{align*}
+    So the domain of $g$ is $x \neq \frac{5}{2}$.\clearpage
+    The function $f$ is a radical function, meaning the radicand must be positive or $0$. We can determine what values of $x$ satisfy this condition by setting the radicand equal to an inequality that is greater than or equal to $0$.
+    \begin{align*}
+    3x^2 + 1 &\ge 0 \\
+    3x^2 &\ge -1 \\
+    x^2 &\ge -\frac{1}{3}
+    \end{align*}
+    We can stop here because we cannot take the square root of both sides of the equation. $\sqrt{-\frac{1}{3}}$ is undefined. This also means that \textit{any} value of $x$ makes this inequality valid. The function $f$ has no domain restriction (i.e. $x \in \mathbb{R}$). When we take a closer look at the function we can see why that is the case. 
+    
+    Because $f$ has no domain restriction, the intersection of the domains of $f$ and $g$ is just the domain of $g$. Therefore, the domain of $(f - g)(x)$ is $x \neq \frac{5}{2}$.
+\end{solution}

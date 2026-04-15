@@ -1,0 +1,90 @@
+\clearpage\section{Function Multiplication}
+Function multiplication is a little different from addition and subtraction, but it's the same principle. 
+\begin{definition}
+    Given two functions $f$ and $g$, their sum $(f \cdot g)(x)$ can be defined as
+    \[
+        (f \cdot g)(x) = f(x) \cdot g(x) \text{.}
+    \]
+    If the function $f$ has a domain of $D_1$ and the function $g$ has a domain of $D_2$, the domain of $(f \cdot g)(x)$ is the set of all $x$ values such that $x \in D_1$ and $x \in D_2$ or, more simply, $x \in D_1 \cap D_2$.
+\end{definition}
+
+Because multiplication and, later, division are a bit different than addition and subtraction, I'll do some example problems before giving one for you to try. Let's consider the functions $f(x) = 3x$ and $g(x) = \frac{12}{13x}$. From the provided definition, we know that
+\[
+(f \cdot g)(x) = f(x) + g(x) \text{.}
+\]
+Substituting the values for $f(x)$ and $g(x)$ gives 
+\[
+(f \cdot g)(x) = 3x \cdot \frac{12}{13x} = \frac{36}{13}
+\]
+Finding the domain of this function is identical to how we did it for addition and subtraction. $f$ is a polynomial, so it has no domain restriction (i.e. $x \in \mathbb{R}$), and $g$ is a rational function, so the denominator cannot equal $0$.
+\begin{align*}
+    13x &= 0 \\
+    x &= 0
+\end{align*}
+The domain of $g$ is $x \neq 0$. Therefore, the domain of $(f \cdot g)(x)$ is $x \neq 0$.
+
+\clearpage
+This is a strange result, though. If $(f \cdot g)(x)$ is a constant (i.e. has no variables), how can there be a domain restriction? There's no $x$ for there to be a restriction. 
+
+The problem lies in how we achieved that constant. Notice that, while simplifying $(f \cdot g)(x)$, we canceled out an $x$. I'll write the step more clearly here:
+\begin{align*}
+3x \cdot \frac{12}{13x} &= \frac{3}{1} \cdot \frac{x}{1} \cdot \frac{12}{13} \cdot \frac{1}{x} \\
+&=\left(\frac{12}{13} \cdot \frac{3}{1}\right)\left( \frac{x}{1} \cdot \frac{1}{x}\right) \\
+&= \frac{12(3)}{13} \cdot \frac{x}{x} \\
+&= \frac{36}{13} \cdot 1 \\
+&= \frac{36}{13}
+\end{align*}
+Although we're left with a constant, the function originally had a variable in the denominator. Canceling that $x$ out doesn't just remove that domain restriction. If either of the functions have a domain restriction, the function composition (multiplication in this case) also has a restriction, regardless of whether or not the variables are canceled.
+
+This is an example of a \textit{point of discontinuity}, which I'll explain in more depth later in the section on continuity.
+
+Try solving a multiplication problem yourself. :)
+\begin{problem}
+    Given the functions $f(x) = \sqrt{x}$ and $g(x) = 3x$, find the function composition $(f \cdot g)(x)$ and state its domain.
+\end{problem}
+\clearpage
+\begin{solution}
+    From the definition, we know that $(f \cdot g)(x)$ is just $f(x)$ multiplied by $g(x)$. That gives $(f \cdot g)(x) = 3x\sqrt{x}$. To find the domain, we'll need to look at $f$ and $g$ individually.
+
+    $f$ is a polynomial function. It, therefore, has no restrictions.
+    $g$ is a radical function, meaning that the radicand cannot equal $0$. Creating an inequality with the radicand and zero gives $x \ge 0$.
+
+    Since $f$ has no restrictions, but $g$ does, the domain of $(f \cdot g)(x)$ has the same restriction of $g$. For $(f \cdot g)(x)$, $x \in [0, \infty]$.
+\end{solution}
+Let's try one more problem. This one will be more difficult, but the steps for solving will be the same.
+\begin{problem}
+    Given two functions $f(x) = \frac{2x^2}{3x + 1}$ and $g(x) = \sqrt{3x^2 - 1}$, find $(f \cdot g)(x)$ and state its domain.
+\end{problem}
+\begin{solution}
+    First, let's multiply the two functions together.
+    \[
+        (f \cdot g)(x) = \frac{2x^2}{3x + 1}\sqrt{3x^2 - 1}
+    \]
+    Now let's look at the domain of each function. I'll start with $f$. The function $f$ is a rational function, which means the denominator cannot be equal to $0$. So I'll set the denominator equal to $0$ and solve for $x$.
+    \begin{align*}
+    3x + 1 &= 0 \\
+    3x &= -1 \\
+    x &= -\frac{1}{3}
+    \end{align*}
+    So the doamin of $f$ is $x \neq -\frac{1}{3}$. 
+    \clearpage
+    Now for $g$. The function $g$ is a radical function, meaning the radicand cannot be less than $0$. So I can set the radicant equal to $0$ and solve for $x$.
+    \begin{align*}
+        3x^2 - 1 &= 0 \\
+        3x^2 &= 1 \\
+        x^2 &= \frac{1}{3} \\
+        x &= \pm \frac{1}{\sqrt{3}} \\
+        x &= \pm \frac{\sqrt{3}}{3} && \longleftarrow \text{Rationalized Fraction}
+    \end{align*}
+    We're looking for a minimum value, so we'll use $x = -\frac{\sqrt{3}}{3}$. This is, indeed, the smallest value of $x$ that satisfies the equation.
+    \begin{align*}
+        3\left(-\frac{\sqrt{3}}{3}\right)^2 - 1 &= 0 \\
+        3\left(\frac{3}{9} \right) - 1 &= 0 \\
+        \frac{9}{9} - 1 &= 0 \\
+        1 - 1 &= 0 \\
+        0 &= 0
+    \end{align*}
+    That means the domain of $g$ is $x \in \left[-\frac{\sqrt{3}}{3}, \infty \right]$.
+
+    With the domain of both functions found, let's look for the intersection of the domains. $f$ has a domain of $x \neq -\frac{1}{3}$ and $g$ has a domain of $x \in \left[-\frac{\sqrt{3}}{3}, \infty \right]$. The domain of $g$ includes $-\frac{1}{3}$. But, because of that a restriction from $f$, there is a hole. Thus, the domain of $(f \cdot g)(x)$ is $x\in \left[-\frac{\sqrt{3}}{3}, -\frac{1}{3} \right) \cup \left(-\frac{1}{3}, \infty \right)$ or $x \ge -\frac{\sqrt{3}}{3} \mid x \neq -\frac{1}{3}$.
+\end{solution}

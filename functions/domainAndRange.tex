@@ -1,0 +1,46 @@
+\chapter{Domain and Range}
+You may have heard about domain and range while in Algebra II (or Integrated III) in the context of inverse functions. For example, you'll be given a function $f(x)$, ask to find it's inverse, $f^{-1}(x)$, and then to state the domain and range of $f(x)$ and $f^{-1}(x)$. Don't get me wrong, understand that is still essential. But the goal here is to really dive into what exactly the domain and range of a function are.
+
+\begin{definition}
+    For any function, $f(x)$, the \textbf{domain} of that function are all values that, when passed into $f(x)$, result in a real output for which $f(x)$ is defined (i.e. excludes things like division by $0$). This definition specifically applies to graphs on the $xy$-plane.
+\end{definition}
+
+A very good example of this is the function
+\[
+f(x) = \sqrt{x} \text{.}
+\]
+
+This function has a domain of $0 \le x < \infty$ or $x \in [0, \infty)$ (interval notation). This is the case because plugging any values less than $0$ would result in a negative number under the radical, which we know is an imaginary number.
+\[
+f(-1) = \sqrt{-1} = i \Longrightarrow \text{$-1$ is \textbf{not} in the domain.}
+\]
+
+\begin{definition}
+    For any function, $f(x)$, the \textbf{range} of that function are all possible outputs given the \textbf{domain restriction}.
+\end{definition}
+Looking back at our example, we can see that the range of the function, $f(x)$ is restricted to positive numbers. Plugging a negative number results in a complex solution, which \textbf{cannot be plotted on a standard coordinate plane consisting of $x$ and $y$ axes}. Therefore, we can say that the range of the function, $f(x)$, is $0 \le y < \infty$ or $y \in [0, \infty)$ (interval notation).
+
+Another example we can use is
+\[
+g(x) = \frac{1}{x} \text{.}
+\]
+Recall that a $0$ in the denominator makes the expression \textbf{undefined}. For that reason, the domain is $x \neq 0$ or $x \in (-\infty, 0) \cup (0, \infty)$. For now, I'll simply give that the range of this function is $y \neq 0$ or $y \in (-\infty, 0) \cup (0, \infty)$. To see why, we need to understand a concept called an \textbf{asymptote}.
+
+Before that, let's do a practice problem.
+
+\begin{problem}
+    Determine the domain and range of the function $f(x) = \sqrt{2x + 1}$.
+\end{problem}
+We haven't covered how to find domains. But, if you think you can figure it out, give it a shot. Regardless, here's the solution.
+\begin{solution}
+    We know that the value inside a radical can never be below $0$. So, to find our domain restriction, we need to solve what's under the radical for $0$.
+    \begin{align*}
+        2x + 1 &= 0 \\
+        2x &= -1 \\
+        x &= -\frac{1}{2}
+    \end{align*}
+    The work we just did shows that any input less than $-\dfrac{1}{2}$ will result in a negative under the radical. That means $-\dfrac{1}{2}$ the minimum value that we can plug into this function. Thus, our domain is $x \ge -\dfrac{1}{2}$.
+
+    Now that we have our domain, we can find our range by seeing what value we get when we plug values on the edges of our domain restrictions. However, in this case, we already know what our range is. Substituting $x = -\dfrac{1}{2}$ gives the lowest valid number under the radical: $0$. So out range is $y \ge 0$.
+
+\end{solution}

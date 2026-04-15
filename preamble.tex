@@ -1,0 +1,69 @@
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb, amsthm} % Used for geneal math stuff.
+\usepackage{hyperref} % Used for Desmos Links
+\usepackage{needspace} % Used for formatting the envirnments.
+\usepackage{gensymb} % Used for the degree symbol
+
+% Currently Unused Packages
+% \usepackage{geometry}
+% \usepackage{enumitem}
+% \usepackage{mathtools}
+% \usepackage{empheq}
+% \usepackage{caption}
+
+\usepackage{parskip} % Used for paragraph spacing.
+\setlength{\parskip}{1em} % Adds one "line" of space between paragraphs
+
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\subsection}{0pt}{3pt}{3pt}
+\raggedbottom
+
+%Used for ling spacing.
+\usepackage{setspace}
+\onehalfspacing
+
+% Used for the graphs
+\usepackage{xcolor} % Line colors
+\usepackage{pgfplots} % The plots
+\pgfplotsset{compat=1.18} %Not sure what this is.
+
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable, theorems, skins} % Used for theorem environments.
+
+% Define environments with a rule and a bold heading
+\newenvironment{definition}[1][]{%
+    \par\medskip
+    \Needspace{3\baselineskip}%  require at least 3 lines of space
+    \noindent\hrule\medskip
+    \noindent\textbf{Definition. }%  (optional: #1)
+    \ignorespaces
+}{%
+    \par\medskip
+    \noindent\hrule\medskip
+}
+
+\newenvironment{problem}[1][]{%
+    \par\medskip
+    \Needspace{3\baselineskip}%  require at least 3 lines of space
+    \noindent\hrule\medskip
+    \noindent\textbf{Problem. }%
+    \ignorespaces
+}{%
+    \par\medskip
+    \noindent\hrule\medskip
+}
+
+\newenvironment{solution}[1][]{%
+    \par\medskip
+    \Needspace{3\baselineskip}%  require at least 3 lines of space
+    \noindent\hrule\medskip
+    \noindent\textbf{Solution. }%
+    \ignorespaces
+}{%
+    \par\medskip
+    \noindent\hrule\medskip
+}
+
+\title{Pre-Calculus}
+\author{Tottaly Real Name}

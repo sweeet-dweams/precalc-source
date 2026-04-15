@@ -1,0 +1,62 @@
+\section{Asymptotes}
+To understand what exactly an asymptote is, let's try plugging some values into the function $g(x)$ and see what happens. First, let's try $x = 1$.
+\[
+    g(1) = \frac{1}{1} = 1
+\]
+Now let's try plugging $10$.
+\[
+    g(10) = \frac{1}{10} = 0.1
+\]
+Let's continue adding zeroes and plugging into the function.
+\[
+\begin{aligned}
+    g(100) &= \frac{1}{100} = 0.01 \\
+    g(1000) &= \frac{1}{1000} = 0.001 \\
+    g(10000) &= \frac{1}{10000} = 0.0001 \\
+    g(1000000000) &= \frac{1}{1000000000} = 0.000000001
+\end{aligned}
+\]
+As we increase the number we input into the function, the smaller the result gets. The same is true with negative numbers:
+\[
+\begin{aligned}
+    g(-100) &= -\frac{1}{100} = -0.01 \\
+    g(-1000) &= -\frac{1}{1000} = -0.001 \\
+    g(-10000) &= -\frac{1}{10000} = -0.0001 \\
+    g(-1000000000) &= -\frac{1}{1000000000} = -0.000000001
+\end{aligned}
+\]
+You may have noticed that, no matter how large or small of a number we input into $g(x)$, the answer will never reach $0$. That's because the numerator is nonzero---it's the number $1$ in this case. The answer to $1$ divided by anything will \textbf{never} be $0$. We can express this idea in a slightly different way. We can say that the function of $g(x)$ will never touch the line $y = 0$. That is, the function will never have a point with a $y$-value of $0$. As a result of this new definition, we can say that the function $g(x)$ has an asymptote line of $y = 0$.
+
+Think about what happens as you decrease the value of $x$ inputted. Remember that dividing by a number less than $1$ increases the value. For example, if we plug $x = 0.1$ into the function, we get
+\[
+    g(0.1) = \frac{1}{0.1} = 10 \text{.}
+\]
+If we continue decreasing the number, we see that the value of $g(x)$ grows without bound.
+\[
+\begin{aligned}
+    g(0.01) &= \frac{1}{0.01} = 100 \\
+    g(0.001) &= \frac{1}{0.001} = 1000 \\
+    g(0.0001) &= \frac{1}{0.0001} = 10000 \\
+    g(0.000000001) &= \frac{1}{0.000000001} = 1000000000
+\end{aligned}
+\]
+The same also applies with negative numbers.
+\[
+\begin{aligned}
+    g(-0.01) &= -\frac{1}{0.01} = -100 \\
+    g(-0.001) &= -\frac{1}{0.001} = -1000 \\
+    g(-0.0001) &= -\frac{1}{0.0001} = -10000 \\
+    g(-0.000000001) &= -\frac{1}{0.000000001} = -1000000000
+\end{aligned}
+\]
+This tells us that, as $g(x)$ gets closer and closer to $0$, the value given by $g(x)$ goes to $\infty$ if the inputs are positive and $-\infty$ if the inputs are negative. Because the value of $x$ can never be $0$, we can say that the function $g(x)$ has another asymptote line of $x = 0$.
+\begin{definition}
+    An \textbf{asymptote} is a line that a graph approaches as $x$ either grows very large ($x \to \infty$ or $x \to -\infty$) or approaches a particular value. More formally:
+    \begin{itemize}
+        \item The line $x = a$ is a \textbf{vertical asymptote} of $f$ if $\displaystyle \lim_{x \to a} f(x) = \pm\infty$.
+        \item The line $y = L$ is a \textbf{horizontal asymptote} of $f$ if $\displaystyle \lim_{x \to \infty} f(x) = L$ or $\displaystyle \lim_{x \to -\infty} f(x) = L$.
+    \end{itemize}
+    The graph gets extremely close to the asymptote. The asymptote really only cares for \textbf{extremely} large values, so the function actually \textit{can} cross a \textbf{horizontal} asymptote before it starts to slowly approach it. This is \textbf{not true} for a vertical asymptote.
+\end{definition}
+
+There are a few kinds of asymptotes. The three I'll cover here are the \textbf{horizontal}, \textbf{vertical}, and \textbf{slant} asymptotes.

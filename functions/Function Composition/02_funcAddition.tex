@@ -1,0 +1,51 @@
+\clearpage\section{Function Addition}
+Function addition is exactly what it sounds like. Given a function $f(x)$ and $g(x)$, you just add them together. So, if $f(x) = 3x$ and $g(x) = 2x^2$, $(f + g)(x) = 2x^2 + 3x$. That's it. The only tricky part is managing the domain of both functions. 
+
+In the example from just now, the domain of $f(x)$ and $g(x)$ are identical: $x \in \mathbb{R}$ or $-\infty < x < \infty$. But that's not always true. Let's look at another example.
+
+If we redefine the function $f$ to be $f(x) = \sqrt{x}$ instead and try adding the functions again, we get $(f + g)(x) = 2x^2 + \sqrt{x}$. The domain of $(f + g)(x)$ has changed because we've introduced a function that has a domain restriction. 
+
+$f$ is a radical function and, with how I've defined $f$, it has a domain of $x \in [0, \infty)$ (i.e. $0 \le x < \infty$). Because $g(x)$ still has no restrictions, the domain of $(f + g)(x)$ just happens to be the same as the domain of $f$ in this particular example.
+
+I'll plug values into $f$ and those same values into $(f + g)(x)$ to illustrate this.
+\begin{center}
+\begin{tabular}{ c | c | c }
+    $x$ & $f(x) = \sqrt{x}$ & $(f + g)(x) = 2x^2 + \sqrt{x}$ \\
+    \hline
+    $2$ & $\sqrt{2}$ & $8 + \sqrt{2}$ \\
+    \hline
+    $1$ & $1$ & $2$ \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    \hline
+    $-1$ & $undefined$ & $undefined$
+\end{tabular}
+\end{center}
+$(f + g)(x)$ is undefined at $x = -1$ because it has a radical term, which is undefined for negative terms. The same restriction exists for rational functions. If $f(x) = \dfrac{1}{x}$ instead of $\sqrt{x}$, then the new domain would be $x \neq 0$.
+
+These initial examples have been easy because at least one of the functions has no restrictions. But what if both functions have restrictions? In a case like that, the domains intersect. \clearpage
+
+If we redefine $g$ to be $g(x) = \dfrac{1}{x}$ and $f$ to be $f(x) = \sqrt{x}$, then \\$\displaystyle (f + g)(x) = \sqrt{x} + \dfrac{1}{x}$. The domain of $f$ has not changed. It's $x \in [0, \infty)$. The domain of $g$ is $x \neq 0$ because division by $0$ is undefined.
+
+The easiest way to visualize the domain of a combination like this is to create a table. Let's create another table to illustrate.
+\begin{center}
+\begin{tabular}{ c | c | c | c}
+    $x$ & $f(x) = \sqrt{x}$ & $g(x) = \dfrac{1}{x}$ & $(f + g)(x) = \sqrt{x} + \dfrac{1}{x}$ \\
+    \hline
+    $2$ & $\sqrt{2}$ & $\dfrac{1}{2}$ & $\sqrt{2} + \frac{1}{2}$ \\
+    \hline
+    $1$ & $1$ & 1 & 2 \\
+    \hline
+    $0$ & $0$ & $undefined$ & $undefined$ \\
+    \hline
+    $-1$ & $undefined$ & $-1$ & $undefined$
+\end{tabular}
+\end{center}
+Notice that if \textit{either} of the functions are undefined, $(f + g)(x)$ is also undefined. In this particular example, $(f + g)(x)$ has a domain of $x \in (0, \infty)$.
+\begin{definition}
+    Given two functions $f$ and $g$, their sum $(f + g)(x)$ can be defined as 
+    \[
+        (f + g)(x) = f(x) + g(x) \text{.}
+    \]
+    If the function $f$ has a domain of $D_1$ and the function $g$ has a domain of $D_2$, the domain of $(f + g)(x)$ is the set of all $x$ values such that $x \in D_1$ and $x \in D_2$ or, more simply, $D_1 \cap D_2$ (intersection of $D_1$ and $D_2$).
+\end{definition}

@@ -1,0 +1,205 @@
+\chapter*{Diagnostic}
+Let's do a diagnostic before you begin. This is supposed to show what you may need to review before continuing. Take your time with these questions. Aim for accuracy over speed. It's crucial that you understand how to solve these questions.
+
+\begin{problem}[title=Problem 1]
+    Given the definition of the function $h(x)$, evaluate $h(-2)$.
+    \[
+        h(x) = 3x^3 - x^2 + 7
+    \]
+\end{problem}
+
+\begin{problem}[title=Problem 2]
+    For the given quadratic equation:
+    \begin{enumerate}
+        \item Determine whether you can find the roots \textbf{without} the quadratic formula.
+        \item Find the roots of the quadratic.
+    \end{enumerate}
+    \[
+        y = x^2 + 3x - 15
+    \]
+\end{problem}
+
+\begin{problem}[title=Problem 3]
+    Rewrite $\sqrt{63}$ in its simplest form.
+\end{problem}
+
+\begin{problem}[title=Problem 4]
+    Given the definition of $g(x)$, create a table of all integer $x$ values from $x = -2$ to $x = 2$. Provide values in exact form (i.e. no decimals).
+    \[
+        g(x) = \sqrt{x + 7}
+    \]
+\end{problem}
+
+\begin{problem}[title=Problem 5]
+    Daniel deposits \$$1000$ into a savings account at "Some Bank." Daniel's amount experiences an interest rate of $5\%$ over the course of $2$ years. How much money does Daniel's bank account have after $2$ years if interest is compounded
+    \begin{enumerate}
+        \item Every year
+        \item Every month
+        \item Every day
+        \item Continuously (Hint: You need to use $e$).
+    \end{enumerate}
+\end{problem}
+
+\begin{problem}[title=Problem 6]
+    Given the equation below, solve for $x$.
+    \[
+        3x^3 + 14x = 12x^2   
+    \]
+    Hint: Cubic equations have $3$ solutions. Do you remember complex/imaginary numbers? :)
+\end{problem}
+
+\begin{problem}[title=Problem 7]
+Simplify the following as best you can.
+\[
+    \frac{x^2-4}{x-2}
+\]
+\end{problem}
+
+\clearpage
+\begin{solution}[title=Solution 1]
+    Solve for $h(-2)$ given that $h(x) = 3x^3 - x^2 + 7$.
+    \begin{align*}
+        h(-2) &= 3(-2)^3 - (-2)^2 + 7 && \text{Substitute $-2$ for $x$}\\
+        &= 3(-8) - 4 + 7 && \text{Take the cube and square}\\
+        &= -24 - 4 + 7 && \text{Combine $-24$ and $-4$}\\
+        &= -28 + 7 && \text{Combine $-28$ and $7$}\\
+        h(-2) &= -21 && \text{Solution}
+    \end{align*}
+\end{solution}
+
+\begin{solution}[title=Solution 2]
+    Given $y = x^2 + 3x - 15$, (a) determine whether you can solve \textbf{without} the quadratic formula and (b) solve for the roots.\\
+    \textbf{Part A.} A quadratic is solvable without the quadratic formula if the discriminant ($b^2 - 4ac$) is a perfect square. In this case, $a = 1$, $b = 3$, $c = -15$.
+    \[
+        (3)^2 - 4(1)(-15) = 9 + 60 = 69
+    \]
+    The discriminant is not a perfect square. Therefore, the quadratic formula must be used.\\
+    \textbf{Part B.} I'll now apply the quadratic formula.
+    \begin{align*}
+        x &= \frac{-3 \pm \sqrt{69}}{2(1)} && \text{Use Values from \textbf{Part A}} \\
+        &= \frac{-3 \pm \sqrt{69}}{2} \\
+        x &\approx -5.6535, 2.6535 && \text{Solution}
+    \end{align*}
+\end{solution}
+
+\begin{solution}[title=Solution 3]
+    Rewrite $\sqrt{63}$ in its simplest form.
+    \begin{enumerate}
+        \item Prime factorize 63: $63 = 9 \times 7 = 3^2 \times 7$.
+        \item Remove the squared term from the radicand: $\sqrt{3^2 \times 7} = \sqrt{3^2} \times \sqrt{7} = 3\sqrt{7}$.
+    \end{enumerate}
+    \[
+        \boxed{\sqrt{63} = 3\sqrt{7}}
+    \]
+\end{solution}
+
+\begin{solution}[title=Solution 4]
+    Create a table of integers from $x = -2$ to $x = 2$ for $g(x) = \sqrt{x + 7}$. All values must be in exact form.
+    \begin{center}
+        \begin{tabular}{ c | c }
+            $x$ & $g(x)$ \\
+            \hline
+            $-2$ & $\sqrt{5}$ \\
+            \hline
+            $-1$ & $\sqrt{6}$ \\
+            \hline
+            $0$ & $\sqrt{7}$ \\
+            \hline
+            $1$ & $\sqrt{8} = 2\sqrt{2}$ \\
+            \hline
+            $2$ & $\sqrt{9} = 3$
+        \end{tabular}
+    \end{center}
+\end{solution}
+
+\begin{solution}[title=Solution 5]
+    Daniel's \$$1000$ experiences $5\%$ interest over the course of $2$ years.
+
+    I'll use the equation for exponential growth to represent Danial's bank account.
+    \[
+        A = P\left(1 + \frac{r}{n}\right)^{tn}
+    \]
+    where,
+    \begin{itemize}
+        \item $A$ is the final amount
+        \item $P$ is the original amount deposited
+        \item $r$ is the interest rate
+        \item $n$ is the compounding rate
+        \item $t$ is years
+    \end{itemize}
+    \textbf{If Compounded Yearly.}
+    \begin{align*}
+        A &= 1000(1 + 0.05)^2 && \text{Solve $1 + 0.05$}\\
+        &= 1000(1.05)^2 &&\text{Evaluate $1.05^2$}\\
+        &= 1000(1.1025) && \text{Evaluate $1000(1.1025)$} \\
+        A &= 1102.5 && \text{Solution}
+    \end{align*}
+    \textbf{If Compounded Monthly.}
+    \begin{align*}
+        A &= 1000\left(1 + \frac{0.05}{12}\right)^{2(12)} &&
+        \text{Simplify exponent} \\
+        A &= 1000\left(1 + \frac{0.05}{12}\right)^{24} &&
+        \text{Rewrite $1$ as $\frac{12}{12}$} \\
+        A &= 1000\left(\frac{12}{12} + \frac{0.05}{12}\right)^{24} &&
+        \text{Evaluate $\frac{12 + 0.05}{12}$} \\
+        A &= 1000\left(\frac{12.05}{12}\right)^{24} &&
+        \text{Approximate with calculator} \\
+        A &\approx 1104.94 && \text{Solution}
+    \end{align*}
+    \textbf{If Compounded Daily.}
+    \begin{align*}
+        A &= 1000\left(1 + \frac{0.05}{365}\right)^{2(365)} &&
+        \text{Simplify exponent} \\
+        A &= 1000\left(1 + \frac{0.05}{365}\right)^{730} &&
+        \text{Rewrite $1$ as $\frac{365}{365}$} \\
+        A &= 1000\left(\frac{365}{365} + \frac{0.05}{365}\right)^{730} &&
+        \text{Evaluate $\frac{365 + 0.05}{365}$} \\
+        A &= 1000\left(\frac{365.05}{365}\right)^{730} &&
+        \text{Approximate with calculator} \\
+        A &\approx 1105.16 && \text{Solution}
+    \end{align*}
+    \textbf{If Compounded Continuously.} Continuously compounding interest rate is defined by the equation $A = Pe^{rt}$.
+    \begin{align*}
+        A &= 1000e^{0.05(2)} && \text{Simplify Exponent} \\
+        A &= 1000e^{0.1} && \text{Use Calculator For Approximation} \\
+        A &\approx 1105.17 && \text{Solution}
+    \end{align*}
+\end{solution}
+\clearpage
+
+\begin{solution}[title=Solution 6]
+    Solve $3x^3 + 14x = 12x^2$ for $x$.
+    \begin{align*}
+        3x^3 - 12x^2 + 14x &= 0 && \text{Moved $12x^2$ to the left} \\
+        x(3x^2 - 12x + 14) &= 0 && \text{Factored out an $x$} \\
+    \end{align*}
+    One solution is immediately clear because of the \textbf{Zero Product Property}: $x = 0$. The quadratic factor is not factorable, so we need to use the quadratic equation.
+    \begin{align*}
+        x &= \frac{-(-12) \pm \sqrt{(-12)^2 - 4(3)(14)}}{2(3)}
+        && \text{Plugging everything in} \\
+        &= \frac{12 \pm \sqrt{144 - 168}}{6} &&
+        \text{Multiplying everything out}\\
+        &= \frac{12 \pm \sqrt{-24}}{6} &&
+        \text{Simplifying radicand}\\
+        &= \frac{12 \pm 2i\sqrt{6}}{6} &&
+        \text{Expanding and simplifying radicand}\\
+        x &= 2 \pm \frac{\sqrt{6}}{3}i && \text{Dividing numerator by denominator}
+    \end{align*}
+    Thus, the solutions are
+    \[
+    \boxed{x = 0, 2 + \frac{\sqrt{6}}{3}i, 2 - \frac{\sqrt{6}}{3}i} \text{.}
+    \]
+\end{solution}
+
+\begin{solution}[title=Solution 7]
+    Simplify $\dfrac{x^2 - 4}{x - 2}$.
+    \begin{align*}
+        \frac{(x - 2)(x + 2)}{x - 2} && \text{Use difference of squares} \\
+        x + 2 && \text{Divide numerator by $x - 2$; $x\neq 2$.}
+    \end{align*}
+    The final answer is
+    \[
+    \boxed{\frac{x^2 - 4}{x - 2} = x + 2} \text{.}
+    \]
+\end{solution}
+If, after completing the diagnostic, you get 3 or more questions wrong, I highly encourage you to review some material from Algebra II. Don't feel down if you did, though. This is probably stuff you haven't seen for a few weeks or monthly (maybe longer). Maybe you're a bit rusty right now or it's just not your day. Just know that you'll need to understand and have a decent grasp of this before you're able to dive into pre-calculus.
