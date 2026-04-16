@@ -1,6 +1,6 @@
-PWD c:\Users\thebe\OneDrive\Desktop\code\LaTeX Stuff\Pre-Calculus Textbook
+PWD c:\Users\thebe\OneDrive\Desktop\Pre-Calculus Textbook
 INPUT C:\Users\thebe\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\thebe\OneDrive\Desktop\code\LaTeX Stuff\Pre-Calculus Textbook\main.tex
+INPUT c:\Users\thebe\OneDrive\Desktop\Pre-Calculus Textbook\main.tex
 OUTPUT main.log
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -284,6 +284,9 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzfill-c
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzlibraryfill.image.code.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzlibraryfill.image.code.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbskinsjigsaw.code.tex
+INPUT .\colorbox.tex
+INPUT .\colorbox.tex
+INPUT colorbox.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\main.aux

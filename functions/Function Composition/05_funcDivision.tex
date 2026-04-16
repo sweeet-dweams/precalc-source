@@ -1,0 +1,135 @@
+\clearpage\section{Function Division}
+Division is different from the other operations in that it's domain restriction isn't just the intersection of the domains of $f$ and $g$. I'll begin by defining function division, and clarify using an example problem.
+\begin{definition}
+Given two functions $f$ and $g$, their quotient $\left(\frac{f}{g} \right)(x)$ can be defined as
+\[
+\left(\frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} \text{.}
+\]
+If the function $f$ has a domain of $D_1$ and the function $g$ has a domain of $D_2$, the domain of $\left(\frac{f}{g} \right)(x)$ is the set of all $x$ values such that $x \in D_1$, $x \in D_2$, \textbf{AND} $g(x) \neq 0$.
+
+\textbf{Definition 1:}
+\[
+\text{Domain of } \left(\frac{f}{g} \right)(x) = \left\{x \mid x \in D_1 \cap D_2 \text{ and } g(x) \neq 0 \right\}
+\]
+\textbf{Definition 2 (Beginner Friendly):}
+
+If the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in [a,b]$, where $a$ and $b$ are finite, real $x$ values (i.e. not infinity and not imaginary) at the edges (boundary) of the domain, then the following is true:
+\begin{itemize}
+    \item If $g(x) = 0$ at some value $x = c$, where $c$ is between $a$ and $b$, then the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in [a, c)\cup(c, b]$ (all values between $a$ and $b$, except $c$, are included).
+    \item If $g(x) = 0$ at the boundary $a$, then the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in (a, b]$ (all values between $a$ and $b$, excluding $a$, are included). 
+    \item If $g(x) = 0$ at the boundary $b$, then the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in [a, b)$ (all values between $a$ and $b$, excluding $b$, are included). 
+\end{itemize}
+\end{definition}\clearpage
+Let's look at an example problem to see how this definition works. Take two functions $f(x) = 3$ and $g(x) = x$. We want to find $\left(\frac{f}{g} \right)(x)$. So, we divide like so:
+\[
+\left(\frac{f}{g} \right)(x) = \frac{3}{x} \text{.}
+\]
+Finding the domain of this, at first, is the same as we normally do it. $f$ is a constant so it has a domain of $x \in \mathbb{R}$. $g$ is a polynomial function, so it, too, has a domain of $x \in \mathbb{R}$. However, notice that the domain of $\left(\frac{f}{g} \right)(x)$ is \textbf{not} $x \in \mathbb{R}$. It has an $x$ in the denominator. 
+
+It's easy to see here that $x \neq 0$. But in more difficult functions where it may not be as easy to tell, you'd find values of $x$ that make the function in the denominator, $g$ in this case, equal to $0$. Let's try it now.
+\begin{align*}
+g(x) &= 0 \\
+x &= 0
+\end{align*}
+From this, we can see that the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in (-\infty, 0) \cup (0, \infty)$ or simply $x \neq 0$. Let's look at a slightly more complicated example.
+
+Consider the functions $f(x) = 3$ and $g(x) = x^2 - 1$. Again, we're trying to find $\left(\frac{f}{g} \right)(x)$. Just like before, let's divide $f$ by $g$ to get our composition:
+\[
+\left(\frac{f}{g} \right)(x) = \frac{3}{x^2 - 1} \text{.}
+\]
+The function $f$, in this example, is still a constant. So it has a domain of $x \in \mathbb{R}$. The function $g$, this time, is a quadratic. But it still has a domain of $x \in \mathbb{R}$. However, it may not be as obvious this time what the domain of the composition is. Let's set $g$, the denominator, equal to $0$ and solve for $x$.
+\begin{align*}
+g(x) &= 0 \\
+x^2 - 1 &= 0 \\
+x^2 &= 1 \\
+x &= \pm 1
+\end{align*}\clearpage
+This time, we get two different answers. The reason we must consider positive \textbf{and} negative $1$ is because squaring either gives $1$,
+\[
+\begin{aligned}
+(1)^2 &= 1 \cdot 1 = 1 \\
+(-1)^2 &= -1 \cdot -1 = 1 \text{,}
+\end{aligned}
+\]
+therefore making them valid solutions. Since $x = 1$ and $x = -1$ make $g(x) = 0$, both values of $x$ must be excluded from the domain. Therefore, the domain is $x \in (-\infty, -1) \cup (-1, 1) \cup (1, \infty)$, or simply $x \neq 1$ and $x \neq -1$.
+
+Try doing this one by yourself. I'll provide the solution, but just give it a shot.
+\begin{problem}
+    Given two functions $f(x) = \frac{2}{x^2 - 10} + 5$ and $g(x) = 6\sqrt{3x - 2}$, find the function composition $\left(\frac{f}{g} \right)(x)$ and state its domain.
+\end{problem}
+\begin{solution}
+    We're given two functions. First, let's create the function by dividing $f$ by $g$.
+    \[
+        \left(\frac{f}{g} \right)(x) = 
+        \frac{\frac{2}{x^2 - 10} + 5}{6\sqrt{3x - 2}}
+    \] 
+    This looks like a really scary function. But it's actually good to keep it this way because it preserves $f(x)$ and $g(x)$, there's no mystery as to where they went. After finding the domain and range, we can make this function look less scary. First, the domain of $f$.
+
+    The function $f$ is a rational function, meaning its denominator cannot be equal to $0$. So, let's set the denominator equal to $0$ and solve.
+    \begin{align*}
+        x^2 - 10 &= 0 \\
+        x^2 &= 10 \\
+        x &= \pm \sqrt{10}
+    \end{align*}
+    Both values of $x$ make the denominator $0$. The domain of $f$ is\\
+    $x \in (-\infty, -\sqrt{10}) \cup (-\sqrt{10}, \sqrt{10}) \cup (\sqrt{10}, \infty)$, or simply $x \neq -\sqrt{10}$ and $x \neq \sqrt{10}$.
+    \clearpage
+    The function $g$ is a radical function. So we'll set the radicand equal to $0$ and find a minimum value for $x$.
+    \begin{align*}
+        3x - 2 &= 0 \\
+        3x &= 2 \\
+        x &= \frac{2}{3}
+    \end{align*}
+    This tells us that the domain for $g$ is $x \in \left[\frac{2}{3}, \infty \right)$.
+    
+    Finally, because $g$ is in the denominator, let's find for what values of $x$ satisfy $g(x) = 0$.
+    \begin{align*}
+        g(x) &= 0 \\
+        6\sqrt{3x - 2} &= 0 \\
+        \sqrt{3x - 2} &= 0 \\
+        3x - 2 &= 0 \\
+        3x &= 2 \\
+        x &= \frac{2}{3}
+    \end{align*}
+    Notice that we get the same answer as when we set the radicand equal to $0$. This is merely a coincidence. It's best practice set each equal to $0$ as separate steps to avoid unecessary mistakes.
+
+    Notice that the domain of $g$ discards \textbf{all} negative numbers. So our domain restriction of $x \neq -\sqrt{10}$ can be ignored. However, the restriction $x \neq \sqrt{10}$ cannot be ignored. $\frac{2}{3}$ is about $0.6667$ and $\sqrt{10}$ is about $3.162$. So, putting it all together, the domain of $\left(\frac{f}{g} \right)(x)$ is $x \in \left[\frac{2}{3}, \sqrt{10} \right) \cup \left(\sqrt{10}, \infty\right)$ (all values between $\frac{2}{3}$ and $\infty$ except $\sqrt{10}$).
+\end{solution}
+That was a beast of a problem. If you managed to get through that unscathed, then well done. But don't worry if you didn't. Again, this was a challenging problem.
+\clearpage
+Although it's not required for the solution, here's how you simplify that function, if you're curious. I'll write it as a separate problem.
+\begin{problem}
+    Simplify the expression:
+    \[
+        \left(\frac{f}{g} \right)(x) = 
+        \frac{\frac{2}{x^2 - 10} + 5}{6\sqrt{3x - 2}}
+    \] 
+\end{problem}
+\begin{solution}
+    First, let's convert the second term in the numerator such that it has the same denominator as the first term.
+    \begin{align*}
+        \left(\frac{f}{g} \right)(x) &= 
+        \frac{\frac{2}{x^2 - 10} + \frac{5(x^2 - 10)}{x^2 - 10}}{6\sqrt{3x - 2}} \\
+        &= \frac{\frac{2 + 5(x^2 - 10)}{x^2 - 10}}{6\sqrt{3x - 2}} \\
+        &= \frac{\frac{2 + 5x^2 - 50}{x^2 - 10}}{6\sqrt{3x - 2}} \\
+        &= \frac{\frac{5x^2 - 48}{x^2 - 10}}{6\sqrt{3x - 2}} \\
+    \end{align*}
+    Next, recall that if we have a number $a$ divided by a number $b$ that is divided again by a number $c$, we can rewrite it as the number $a$ divided by the product of $b$ and $c$.
+    \[
+    \left(\frac{f}{g} \right)(x) =
+    \frac{5x^2 - 48}{(x^2 - 10)(6\sqrt{3x - 2})}
+    \]
+    Now we move the factor of $6$ to the beginning of the denominator in preparation to rationalize it.
+    \[
+    \left(\frac{f}{g} \right)(x) =
+    \frac{5x^2 - 48}{6(x^2 - 10)\sqrt{3x - 2}}
+    \]\clearpage
+    To rationalize the fraction, we simply multiply the numerator and denominator by the radical factor.
+    \begin{align*}
+    \left(\frac{f}{g} \right)(x) &=
+    \frac{5x^2 - 48}{6(x^2 - 10)\sqrt{3x - 2}} 
+    \cdot \frac{\sqrt{3x - 2}}{\sqrt{3x - 2}} \\
+    &= \frac{(5x^2 - 48)(\sqrt{3x - 2})}{6(x^2 - 10)(3x - 2)} 
+    \end{align*}
+    This is the final, most simplified form. It still looks a bit scary, but it's a lot less scary than what we had to start with.
+\end{solution}

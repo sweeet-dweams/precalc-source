@@ -32,27 +32,27 @@
 \tcbuselibrary{breakable, theorems, skins} % Used for theorem environments.
 
 % Define environments with a rule and a bold heading
-\newenvironment{definition}[1][]{%
-    \par\medskip
-    \Needspace{3\baselineskip}%  require at least 3 lines of space
-    \noindent\hrule\medskip
-    \noindent\textbf{Definition. }%  (optional: #1)
-    \ignorespaces
-}{%
-    \par\medskip
-    \noindent\hrule\medskip
-}
+% \newenvironment{definition}[1][]{%
+%     \par\medskip
+%     \Needspace{3\baselineskip}%  require at least 3 lines of space
+%     \noindent\hrule\medskip
+%     \noindent\textbf{Definition. }%  (optional: #1)
+%     \ignorespaces
+% }{%
+%     \par\medskip
+%     \noindent\hrule\medskip
+% }
 
-\newenvironment{problem}[1][]{%
-    \par\medskip
-    \Needspace{3\baselineskip}%  require at least 3 lines of space
-    \noindent\hrule\medskip
-    \noindent\textbf{Problem. }%
-    \ignorespaces
-}{%
-    \par\medskip
-    \noindent\hrule\medskip
-}
+% \newenvironment{problem}[1][]{%
+%     \par\medskip
+%     \Needspace{3\baselineskip}%  require at least 3 lines of space
+%     \noindent\hrule\medskip
+%     \noindent\textbf{Problem. }%
+%     \ignorespaces
+% }{%
+%     \par\medskip
+%     \noindent\hrule\medskip
+% }
 
 \newenvironment{solution}[1][]{%
     \par\medskip
@@ -64,6 +64,8 @@
     \par\medskip
     \noindent\hrule\medskip
 }
+
+\input{colorbox.tex}
 
 \title{Pre-Calculus}
 \author{Tottaly Real Name}
