@@ -1,0 +1,222 @@
+\clearpage
+\chapter{Composite Functions}
+Function compositions and composite functions sound similar, but they're quite different. Instead of multiplying or adding functions together, we're putting functions inside of other functions. You'll often see the analogy of putting a machine in another machine. Although this may be a helpful visualization to some, I will not be using it. Instead, I'll explain what it is using an example.
+
+\section{Notation For Function Notation}
+What I want to do before that, however, is clarify the notation for composite functions. This is often a huge point of confusion for many students, as was the case for me. To avoid that confusion, I'll show both ways of notating composite functions here.
+
+\begin{itemize}
+    \item Notation 1: $f(g(x))$
+    \item Notation 2: $(f \circ g)(x)$
+\end{itemize}
+
+Both are ways of writing composite functions. I find Notation 1 more intuitive, so I will be using it for the remainder of this text. However, if you see $(f \circ g)(x)$, understand that it is exactly the same thing.
+\clearpage
+\section{What Is A Composite Function}
+A composite function is basically a function inside of another function. As mentioned, an example is best suited to explain this. Let's start with something simple.
+
+Given a funtion $f(x) = 3x$, we know that we can plug a value for $x$ and get a cooresponding $y$ value. For instance, if we plug $x = 5$ into $f$, we'll get $f(5) = 15$. I'll write the process of solving $f(5)$ in more detail:
+\begin{align*}
+    f(5) &= 3(5) && \text{Substituting $5$ for $x$}\\
+    f(5) &= 15 && \text{Multiplying $5 \times 3$}
+\end{align*}
+This may seem trivial, but remembering this will help us move onto composite functions.
+
+Now, along with the function $f$, I'll define a new function $g(x) = 10x$. What do you think would happen if, instead of plugging a constant for the variable $x$ in the function $f$, we plugged an entire function? What I mean is this: instead of plugging $x = 5$, what if we plugged $x = g(x)$? Well... Let's try it.
+\begin{align*}
+    f(g(x)) &= 3(g(x)) && \text{Substituting $g(x)$ for $x$}\\
+    f(10x) &= 3(10x) && \text{Substituting the value of $g(x)$}\\
+    f(10x) &= 30x && \text{Multiplying $3 \times 10x$}
+\end{align*}
+We didn't get a value. Instead, we got a new function entirely. When we composed $f$ and $g$ we got
+\[
+f(g(x)) = 30x \text{.}
+\]
+Notice that, when I was solving for $f(g(x))$, I substituted $g(x)$ for $10x$ and wrote $f(10x) = 30x$. Although you \textit{can} do this, it's not recommended unless you're literally asked to plug $10x$ into the function. If you want to find a composite function, it's best to stick with $f(g(x))$ without replacing $g(x)$ for whatever it may be ($10x$ in this case).
+
+The reason you don't want to replace $g(x)$ is because you may be asked to substitute a value into a composite function. For example, you may be asked to find $f(g(12))$.
+
+If you're asked to find something like $f(g(12))$, you treat it just like any other function, You replace $x$ with whatever was plugged in.
+\begin{align*}
+    f(g(12)) &= 30(12) && \text{Substituting $12$ for $x$} \\
+    f(g(12)) &= 360 && \text{Multiplying $30 \times 12$}
+\end{align*}
+I want to show the solution for $f(g(12))$ in a slightly different way. Notice that, in $f(g(12))$, the value $g(12)$ is inside of the function $f$. So, instead of plugging $x$ directly into $f(g(x))$, I'll plug it into $g(x)$, and then plug \textit{that} value into $f$.
+\begin{align*}
+    g(12) &= 10(12) \\
+    g(12) &= 120
+\end{align*}
+Now we can take $120$ and plug it into $f$.
+\begin{align*}
+    f(g(12)) &= 3(g(12)) \\
+    f(g(12)) &= 3(120) \\
+    f(g(12)) &= 360
+\end{align*}
+Notice that we get the same answer.
+\clearpage\section{Domain Restrictions}
+Like with function compositions, composite function have domains to look out for. A method that I've found to work quite well is the following.
+\begin{enumerate}
+    \item Create the function $f(g(x))$ and \textbf{DO NOT SIMPLIFY}.
+    \item Then, find the restrictions like you would a normal function.
+    \item simplify the function.
+\end{enumerate}
+Here's an example.
+
+Given the function $f(x) = \sqrt{x}$ and $g(x) = x - 2$, find $f(g(x))$ and list its domain.
+
+Following the strategy above, we create the function $f(g(x)) = \sqrt{x - 2}$. Now, without doing anything else, we look for domain restrictions. 
+
+The only one this composite function has is the radical. Set the radicant equal to $0$ and solve for $x$.
+\vspace*{-0.5cm}
+\begin{align*}
+x - 2 &= 0 \\
+x &= 2
+\end{align*}
+Because this is a radical function, we can say that the domain restriction for $f(g(x))$ is $x \ge 2$ or $x \in [2, \infty)$.
+
+Let's look at a slightly more difficult example this time.
+
+Given the function $f(x) = \frac{1}{x}$ and $g(x) = \frac{1}{x - 1}$, find $f(g(x))$ and list its domain.
+
+First, I'll create $f(g(x))$:
+\[
+f(g(x)) = \frac{1}{\frac{1}{x - 1}} \text{.}
+\]
+Now, I'll look for a domain restriction. We see that there is a denominator. Let's set that equal to zero.
+\[
+\frac{1}{x - 1} = 0
+\]
+This is still tricky, so let's go one level deeper and set the denominator of the fraction above equal to $0$.
+\[
+x - 1 = 0
+\]
+Now, after solving for $x$, we can see that the domain restrition for this rational function is $x \neq 1$. From this, we can say that the domain of $f(g(x))$ is $x \neq 1$. Now, we can simplify this.
+\begin{align*}
+f(g(x)) &= \frac{1}{\frac{1}{x - 1}} \\
+&= 1 \cdot \frac{x - 1}{1} \\
+&= x - 1
+\end{align*}
+Alternatively, you could use this procedure:
+\begin{enumerate}
+    \item Find the domain of $g(x)$. This domain is $A$.
+    \item Find the domain of $f$, but using $g$ instead of $x$. This is domain $B$.
+    \item Take the intersection of the domains $A$ and $B$.
+    \item Create $f(g(x))$ and simplify.
+\end{enumerate}
+This alternateive method may look a bit tricky, so let's do an example together using the previous problem.
+
+Given the function $f(x) = \frac{1}{x}$ and $g(x) = \frac{1}{x - 1}$, find $f(g(x))$ and list its domain.
+
+First, I'll take the domain of $g$. $g$ is a rational function, meaning its denominator cannot equal $0$. So set its denominator equal to $0$ and solve for $x$.
+\[
+x - 1 = 0 \Longleftarrow x = 1
+\]
+This means $x$ cannot equal $1$ ($x \neq 1$) or $A = (-\infty, 1) \cup (1, \infty)$.
+
+Now we'll find the domain of $f$. $f$, too, is a rational function. So let's set its numerator equat to $0$ and solve for $x$.
+\[
+x = 0
+\]
+After finding the domain of $f$, which is $x \neq 0$ replace the $x$ with the function $g$.
+\[
+\frac{1}{x - 1} \neq 0
+\]
+This statement happens to be true for all values of $x$ because the numerator is non-zero. $\frac{1}{x - 1}$ cannot equal $0$ anyway. So $B = (-\infty, \infty)$.
+
+Finally, we'll take the intersection of $A$ and $B$ ($A \cap B$).
+\[
+A \cap B = \left((-\infty, 1) \cup (1, \infty) \right) \cap (-\infty, \infty)
+\]
+This looks really scary, but it's easy to visualize with a numberline or just by stating what the restrictions are.
+\begin{itemize}
+    \item $A$ says that $x$ cannot be $1$.
+    \item $B$ says that $x$ could by any number since $\frac{1}{x - 1}$ can never be $0$.
+\end{itemize}
+So the intersection of these is that $x$ canont be $0$. So the domain of $f(g(x))$ is $x \in (-\infty, 1) \cup (1, \infty)$ or just $x \neq 1$.
+
+Simplifying the nested fraction gives the same answer as before.
+\[
+f(g(x)) = x - 1 \text{ where } x \in (-\infty, 1) \cup (1, \infty)
+\]
+
+Let's do one more example. Given $f(x) = \sqrt{x + 3}$ and $g(x) = \frac{1}{x - 2}$, find $f(g(x))$ and state its domain.
+
+First, I'll take the domain of $g$. $g$ is a rational function, so it's denominator cannot equal $0$. So I'll set it's denominator equal to $0$ and solve for $x$
+\[
+x - 2 = 0 \Longrightarrow x = 2
+\]
+This means that $x \neq 2$ or $A = (-\infty, 2) \cup (2, \infty)$
+
+Next, I'll find the domain of $f$. $f$ is a radical function, meaning the radicand must be greater than or equal to $0$. So I'll set the radicand equal to $0$ to find the minimum value.
+\[
+x + 3 = 0 \Longrightarrow x = -3
+\]
+This means that $x$ must be greater than or equal to $-3$ ($x \ge -3$) or \\$B = [-3, \infty)$.
+\clearpage
+Now we take the intersection of $A$ and $B$. To make this easier, let's state what each of the domains tell us.
+\begin{itemize}
+    \item $A$ tells us that $x$ cannot equal $2$ ($x \neq 2$).
+    \item $B$ tells us that $x$ must be greater than or equal to $-3$ ($x \ge -3$).
+\end{itemize}
+So the final domain is $x \in [-3, 2) \cup (2, \infty)$. If interval notation looks a bit intimidating, you can also write it like this: $-3 \le x < 2$ and $2 < x < \infty$.
+
+Let's formalize composite functions with a definition.
+\begin{definition}
+    Given two functions $f$ and $g$, the composite function $f \circ g$ is the result of substituting the function $g$ into the function $f$. For functions $f(x)$ and $g(x)$:
+    \[
+        f \circ g = f(g(x))
+    \]
+    We can write the domain of $f \circ g$ like so:
+    \[
+    Domain(f \circ g) = \left\{x \in Domain(g) \mid g(x) \in Domain(f) \right\}
+    \]
+    This means that $x$ must be in the domain of $g$, and the entire function $g(x)$ must be in the domain of the function $f$.
+\end{definition}
+This definition is where the second procedure comes from.
+
+Try this problem for size:
+\begin{problem}
+    Given the functions $f(x) = \sqrt{3x + 1}$ and $g(x) = \frac{1}{x^2 - 3}$, find the composite function $g(f(x))$ and state its domain.
+\end{problem}
+
+\begin{solution}
+    I'm gonna use the first procedure for this solution. I'll leave the procedure here as a reference.
+    \begin{enumerate}
+        \item Create the function $f(g(x))$ and \textbf{DO NOT SIMPLIFY}.
+        \item Then, find the restrictions like you would a normal function.
+        \item simplify the function.
+    \end{enumerate}
+
+    First, I'll combine the functions. But remember that the problem asked for $g(f(x))$, not $f(g(x))$.
+    \[
+        g(f(x)) = \frac{1}{\left(\sqrt{3x + 1} \right)^2 - 3}
+    \]
+    Second, I'll find the domain restriction. The outer most function is a rational function (fraction), meaning the denominator cannot be $0$. To find the restriction of the rational, I'll set the denominator equal to $0$ and solve for $x$.
+    \begin{align*}
+        \left(\sqrt{3x + 1} \right)^2 - 3 &= 0 \\
+        \left(\sqrt{3x + 1} \right)^2 &= 3 \\
+        3x + 1 &= 3 \\
+        3x &= 2 \\
+        x &= \frac{2}{3}
+    \end{align*}
+    So we know that $x \neq \frac{2}{3}$.
+
+    The denominator of the fraction also has a radical term. The radical term must be greater than or equal to $0$. So I'll set the radicand equal to $0$ and solve for $x$ to find the minimum value.
+    \begin{align*}
+        3x + 1 &= 0 \\
+        3x &= -1 \\
+        x &= -\frac{1}{3}
+    \end{align*}
+    Now we additinally know that $x \ge -\frac{1}{3}$. Combining the two restrictions gives $x \in \left[-\frac{1}{3}, \frac{2}{3} \right) \cup \left(\frac{2}{3}, \infty \right)$ (i.e. all values from $-\frac{1}{3}$ to infinity \textbf{except} $\frac{2}{3}$).
+
+    Now we can simplify this as best we can.
+    \begin{align*}
+        g(f(x)) &= \frac{1}{\left(\sqrt{3x + 1} \right)^2 - 3} \\
+        &= \frac{1}{3x + 1 - 3} \\
+        &= \frac{1}{3x - 2}
+    \end{align*}
+    So our final answer is
+    \[
+        g(f(x)) = \frac{1}{3x - 2} \text{ where } x \in \left[-\frac{1}{3}, \frac{2}{3} \right) \cup \left(\frac{2}{3}, \infty \right)
+    \]
+\end{solution}

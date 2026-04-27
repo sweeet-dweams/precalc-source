@@ -462,6 +462,9 @@ INPUT functions\Function Composition\05_funcDivision.tex
 INPUT .\functions\Function Composition\06_compositionPractice.tex
 INPUT .\functions\Function Composition\06_compositionPractice.tex
 INPUT functions\Function Composition\06_compositionPractice.tex
+INPUT .\functions\Composite Functions\01_Composite_Functions.tex
+INPUT .\functions\Composite Functions\01_Composite_Functions.tex
+INPUT functions\Composite Functions\01_Composite_Functions.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
