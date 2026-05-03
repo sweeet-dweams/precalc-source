@@ -465,6 +465,9 @@ INPUT functions\Function Composition\06_compositionPractice.tex
 INPUT .\functions\Composite Functions\01_Composite_Functions.tex
 INPUT .\functions\Composite Functions\01_Composite_Functions.tex
 INPUT functions\Composite Functions\01_Composite_Functions.tex
+INPUT .\functions\Inverse Functions\01_Inverse_Functions_Intro.tex
+INPUT .\functions\Inverse Functions\01_Inverse_Functions_Intro.tex
+INPUT functions\Inverse Functions\01_Inverse_Functions_Intro.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
