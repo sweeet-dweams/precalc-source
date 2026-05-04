@@ -95,6 +95,10 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\gensymb\gensymb.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
@@ -468,6 +472,9 @@ INPUT functions\Composite Functions\01_Composite_Functions.tex
 INPUT .\functions\Inverse Functions\01_Inverse_Functions_Intro.tex
 INPUT .\functions\Inverse Functions\01_Inverse_Functions_Intro.tex
 INPUT functions\Inverse Functions\01_Inverse_Functions_Intro.tex
+INPUT .\functions\Piecewise Functions\01_Piecewise_Intro.tex
+INPUT .\functions\Piecewise Functions\01_Piecewise_Intro.tex
+INPUT functions\Piecewise Functions\01_Piecewise_Intro.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -483,6 +490,8 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
