@@ -99,6 +99,8 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
@@ -339,22 +341,13 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\thebe\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\Misc\introduction.tex
-INPUT .\Misc\introduction.tex
-INPUT .\Misc\introduction.tex
-INPUT .\Misc\introduction.tex
-INPUT Misc\introduction.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT .\Misc\diagnostic.tex
-INPUT .\Misc\diagnostic.tex
-INPUT .\Misc\diagnostic.tex
-INPUT .\Misc\diagnostic.tex
-INPUT Misc\diagnostic.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
@@ -363,8 +356,21 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+OUTPUT main.toc
+INPUT .\Misc\introduction.tex
+INPUT .\Misc\introduction.tex
+INPUT .\Misc\introduction.tex
+INPUT .\Misc\introduction.tex
+INPUT Misc\introduction.tex
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\Misc\diagnostic.tex
+INPUT .\Misc\diagnostic.tex
+INPUT .\Misc\diagnostic.tex
+INPUT .\Misc\diagnostic.tex
+INPUT Misc\diagnostic.tex
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
 INPUT .\functions\functionsIntro.tex
@@ -475,6 +481,27 @@ INPUT functions\Inverse Functions\01_Inverse_Functions_Intro.tex
 INPUT .\functions\Piecewise Functions\01_Piecewise_Intro.tex
 INPUT .\functions\Piecewise Functions\01_Piecewise_Intro.tex
 INPUT functions\Piecewise Functions\01_Piecewise_Intro.tex
+INPUT .\trig\TrigIntro.tex
+INPUT .\trig\TrigIntro.tex
+INPUT trig\TrigIntro.tex
+INPUT .\trig\Radians\RadiansAndDegrees.tex
+INPUT .\trig\Radians\RadiansAndDegrees.tex
+INPUT trig\Radians\RadiansAndDegrees.tex
+INPUT .\trig\Radians\introducingRadians.tex
+INPUT .\trig\Radians\introducingRadians.tex
+INPUT trig\Radians\introducingRadians.tex
+INPUT .\trig\Radians\Radian As A Unit Of Measurement.tex
+INPUT .\trig\Radians\Radian As A Unit Of Measurement.tex
+INPUT trig\Radians\Radian As A Unit Of Measurement.tex
+INPUT .\trig\Radians\DegToRadConversion.tex
+INPUT .\trig\Radians\DegToRadConversion.tex
+INPUT trig\Radians\DegToRadConversion.tex
+INPUT .\trig\BasicTrig\BasicTrig.tex
+INPUT .\trig\BasicTrig\BasicTrig.tex
+INPUT trig\BasicTrig\BasicTrig.tex
+INPUT .\trig\BasicTrig\01_Intro_Plus_Sine.tex
+INPUT .\trig\BasicTrig\01_Intro_Plus_Sine.tex
+INPUT trig\BasicTrig\01_Intro_Plus_Sine.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
