@@ -37,3 +37,9 @@
 \contentsline {section}{\numberline {7.3}Converting Between Degrees and Radians}{94}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Basic Trigonometric Functions}{97}{chapter.8}%
 \contentsline {section}{\numberline {8.1}The Sine Function}{98}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Cosine Function}{99}{section.8.2}%
+\contentsline {section}{\numberline {8.3}The Tangent Function}{101}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Properties of Trigonometric Functions}{104}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Period For The Sine and Cosine Functions}{104}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Properties Of The Tangent Function}{109}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Frequency}{111}{section.9.3}%
