@@ -523,6 +523,9 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT .\trig\Properties Of Trigs\03_defining_frequency.tex
 INPUT .\trig\Properties Of Trigs\03_defining_frequency.tex
 INPUT trig\Properties Of Trigs\03_defining_frequency.tex
+INPUT .\trig\Special Triangles\Special Triangles.tex
+INPUT .\trig\Special Triangles\Special Triangles.tex
+INPUT trig\Special Triangles\Special Triangles.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -564,6 +567,8 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
