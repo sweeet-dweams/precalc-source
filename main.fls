@@ -101,6 +101,14 @@ INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.st
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\lineno\lineno.sty
+INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\lineno\lineno.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\thebe\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
@@ -526,6 +534,9 @@ INPUT trig\Properties Of Trigs\03_defining_frequency.tex
 INPUT .\trig\Special Triangles\Special Triangles.tex
 INPUT .\trig\Special Triangles\Special Triangles.tex
 INPUT trig\Special Triangles\Special Triangles.tex
+INPUT .\trig\Unit Circle\Unit Circle.tex
+INPUT .\trig\Unit Circle\Unit Circle.tex
+INPUT trig\Unit Circle\Unit Circle.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

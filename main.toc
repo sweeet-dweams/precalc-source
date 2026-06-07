@@ -46,3 +46,5 @@
 \contentsline {chapter}{\numberline {10}Special Triangles}{113}{chapter.10}%
 \contentsline {section}{\numberline {10.1}The 30-60-90 Triangle}{113}{section.10.1}%
 \contentsline {section}{\numberline {10.2}The 45-45-90 Triangle}{114}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Unit Circle}{120}{chapter.11}%
+\contentsline {section}{\numberline {11.1}What Is The Unit Circle?}{121}{section.11.1}%
